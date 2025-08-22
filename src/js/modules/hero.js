@@ -1,3 +1,16 @@
+export function initHero() {
+  const formEl = document.querySelector('.js-search-form[data-id="1"]');
+  const heroEl = document.querySelector('.js-hero-container');
+  if (!formEl || !heroEl) return; // якщо ще нема — просто вийти
+
+  formEl.addEventListener('submit', async e => {
+    e.preventDefault();
+    const name = e.target.elements.query.value.trim();
+    const data = await searchHero(name);
+    renderHero(data);
+  });
+}
+
 const refs = {
   formEl: document.querySelector('.js-search-form[data-id="1"]'),
   heroEl: document.querySelector('.js-hero-container'),

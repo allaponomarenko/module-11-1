@@ -1,4 +1,11 @@
-async function hydrateLoads() {
+import './modules/binance';
+import './modules/hero';
+import './modules/quotes';
+import './modules/ipfinder';
+import './modules/pokemon';
+import './modules/instagram';
+import './modules/user';
+/*async function hydrateLoads() {
   const nodes = [...document.querySelectorAll('load[src]')];
   for (const node of nodes) {
     const url = node.getAttribute('src');
@@ -20,7 +27,7 @@ async function hydrateLoads() {
   await import('./modules/instagram.js');
   await import('./modules/user.js');
 })();
-
+*/
 //============================
 
 /* function getCommentsByPostID(postId) {
