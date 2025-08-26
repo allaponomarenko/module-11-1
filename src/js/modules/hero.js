@@ -1,16 +1,4 @@
-export function initHero() {
-  const formEl = document.querySelector('.js-search-form[data-id="1"]');
-  const heroEl = document.querySelector('.js-hero-container');
-  if (!formEl || !heroEl) return; // якщо ще нема — просто вийти
-
-  formEl.addEventListener('submit', async e => {
-    e.preventDefault();
-    const name = e.target.elements.query.value.trim();
-    const data = await searchHero(name);
-    renderHero(data);
-  });
-}
-
+//працює
 const refs = {
   formEl: document.querySelector('.js-search-form[data-id="1"]'),
   heroEl: document.querySelector('.js-hero-container'),
@@ -33,7 +21,7 @@ function searchHero(superhero) {
 
   const options = {
     headers: {
-      'X-RapidAPI-Key': 'f6fe44fec7msh9f58de139869781p15408ajsn8e7b73b5d6b1',
+      'X-RapidAPI-Key': '418f4683ecmsh26e2b418590c9aep10d87bjsn22f7f643a95b',
       'X-RapidAPI-Host': 'superhero-search.p.rapidapi.com',
     },
   };

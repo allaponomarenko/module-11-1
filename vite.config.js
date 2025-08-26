@@ -1,9 +1,12 @@
-// vite.config.js (або vite.config.mjs)
+// vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: 'src',
-  base: '', // відносні шляхи для GitHub Pages
-  server: { port: 5174, open: true },
-  build: { outDir: '../dist', emptyOutDir: true },
+  root: 'src', // ← корінь — папка src
+  publicDir: '../public',
+  build: {
+    outDir: '../dist',
+    emptyOutDir: true,
+  },
+  server: { open: true },
 });

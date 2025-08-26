@@ -1,3 +1,4 @@
+//працює
 const refs = {
   formEl: document.querySelector('.js-search-form[data-id="5"]'),
   listEl: document.querySelector('.js-pokemon-list'),

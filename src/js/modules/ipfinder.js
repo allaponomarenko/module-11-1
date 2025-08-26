@@ -1,3 +1,4 @@
+//пошук по IP адресі. Працює але шукає дуже приблизно
 const refs = {
   formEl: document.querySelector('.js-search-form[data-id="4"]'),
   cardInfo: document.querySelector('.js-ip-form'),
@@ -9,6 +10,7 @@ refs.formEl.addEventListener('submit', e => {
   const ip = e.target.elements.userip.value;
 
   findIp(ip).then(data => {
+    //console.log(data);
     renderIp(data);
   });
 
@@ -23,7 +25,7 @@ function findIp(ip) {
 
   const options = {
     headers: {
-      'X-RapidAPI-Key': 'f6fe44fec7msh9f58de139869781p15408ajsn8e7b73b5d6b1',
+      'X-RapidAPI-Key': '418f4683ecmsh26e2b418590c9aep10d87bjsn22f7f643a95b',
       'X-RapidAPI-Host': 'ip-geolocation-ipwhois-io.p.rapidapi.com',
     },
   };
@@ -85,3 +87,5 @@ function renderIp({
 }
 
 findIp('134.249.171.77');
+//192.168.100.105
+//195.82.105.52
