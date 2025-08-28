@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <title>Універсальний fetch-шаблон</title>
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        body {
+            margin: 24px;
+        }
+
+        h2 {
+            margin-top: 1.5rem;
+        }
+
+        form {
+            display: flex;
+            gap: 8px;
+            margin: 8px 0 16px;
+        }
+
+        input[name="query"] {
+            flex: 1;
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .price-row {
+            display: flex;
+            gap: 12px;
+            font-weight: 600;
+        }
+
+        .status {
+            margin-top: 4px;
+            color: #666;
+            min-height: 1.25em;
+        }
+
+        .empty {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Універсальний шаблон: робота з API через fetch</h1>
+
+    <section class="card">
+        <h2>1) Binance (RapidAPI): ціна символу</h2>
+        <form class="js-search-form"
+              data-id="2">
+            <input name="query"
+                   placeholder="Напр.: BTCUSDT"
+                   required />
+            <button type="submit">Отримати ціну</button>
+        </form>
+        <div class="js-binance-info empty">Нічого не запитували…</div>
+    </section>
+
+    <section class="card">
+        <h2>2) Superhero (RapidAPI): пошук героя</h2>
+        <form class="js-search-form"
+              data-id="1">
+            <input name="query"
+                   placeholder="Напр.: Batman"
+                   required />
+            <button type="submit">Шукати</button>
+        </form>
+        <div class="js-hero-container row"></div>
+    </section>
+
+    <section class="card">
+        <h2>3) PokeAPI: деталі покемона</h2>
+        <form class="js-search-form"
+              data-id="5">
+            <input name="query"
+                   placeholder="Напр.: pikachu або 25"
+                   required />
+            <button type="submit">Показати</button>
+        </form>
+        <div class="js-pokemon-list row"></div>
+    </section>
+
+    <div class="js-status status"
+         aria-live="polite"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
