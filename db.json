@@ -1,5 +1,166 @@
 {
-  "books": [],
+  "books": [
+    {
+      "id": "1",
+      "title": "Гаррі Поттер",
+      "author": "Дж. К. Ролінґ"
+    },
+    {
+      "id": "2",
+      "title": "Мистецтво війни",
+      "author": "Сунь-Цзи"
+    },
+    {
+      "id": "7b29",
+      "title": "Test title",
+      "author": "Volodka",
+      "desc": "zdfhbxffgncghvnc"
+    },
+    {
+      "id": "27b6",
+      "title": "Test title 2",
+      "author": "Volodka",
+      "desc": "zdfhbxffgncghvnc"
+    },
+    {
+      "id": "41f1",
+      "title": "quis qui qui",
+      "author": "Gilberto Rodriguez",
+      "desc": "Qui aut occaecati dolorum maxime adipisci a temporibus aut."
+    },
+    {
+      "id": "5b6b",
+      "title": "non facilis tempora",
+      "author": "Mr. Andrea Crooks",
+      "desc": "nesciunt ipsum nemo"
+    },
+    {
+      "id": "6da1",
+      "title": "numquam dicta ut",
+      "author": "Curtis Medhurst",
+      "desc": "ut laboriosam harum"
+    },
+    {
+      "id": "29cc",
+      "title": "optio voluptatem voluptate",
+      "author": "Mr. Isaac Boyer",
+      "desc": "eos molestias id"
+    },
+    {
+      "id": "4566",
+      "title": "qui consequatur nihil",
+      "author": "Alonzo Douglas",
+      "desc": "ipsa odit distinctio"
+    },
+    {
+      "id": "6317",
+      "title": "illum expedita quo",
+      "author": "Elvira Hahn",
+      "desc": "ut repudiandae sit"
+    },
+    {
+      "id": "4e82",
+      "title": "officia eos ea",
+      "author": "Herman Dickinson",
+      "desc": "et consequatur soluta"
+    },
+    {
+      "id": "394a",
+      "title": "unde eveniet voluptatem",
+      "author": "Amanda Mayert",
+      "desc": "optio quasi qui"
+    },
+    {
+      "id": "876b",
+      "title": "maiores repudiandae quas",
+      "author": "Denise Durgan Sr.",
+      "desc": "consequuntur nobis animi"
+    },
+    {
+      "id": "0ec0",
+      "title": "modi velit eum",
+      "author": "Scott Gutmann",
+      "desc": "amet doloribus quo"
+    },
+    {
+      "id": "352c",
+      "title": "enim iure laboriosam",
+      "author": "Ms. Angel Gulgowski",
+      "desc": "deserunt iure voluptate"
+    },
+    {
+      "id": "d8e6",
+      "title": "ut unde quam",
+      "author": "Carroll Miller",
+      "desc": "aut officia et"
+    },
+    {
+      "id": "4c66",
+      "title": "laudantium molestias quia",
+      "author": "Ms. Allen Schaden",
+      "desc": "delectus illo voluptas"
+    },
+    {
+      "id": "e837",
+      "title": "cumque vitae doloribus",
+      "author": "Lance Hane",
+      "desc": "voluptas fugiat expedita"
+    },
+    {
+      "id": "044f",
+      "title": "deserunt aut quo",
+      "author": "Mr. Kellie Bernhard",
+      "desc": "quia ut quia"
+    },
+    {
+      "id": "cd01",
+      "title": "voluptate consequatur ut",
+      "author": "Victoria Mosciski",
+      "desc": "neque ut ut"
+    },
+    {
+      "id": "a70b",
+      "title": "molestiae deleniti mollitia",
+      "author": "Catherine Frami",
+      "desc": "rerum consequatur odio"
+    },
+    {
+      "id": "6635",
+      "title": "cumque sequi a",
+      "author": "Angie Ratke",
+      "desc": "voluptatem sint nisi"
+    },
+    {
+      "id": "a883",
+      "title": "velit sint illo",
+      "author": "Perry Homenick III",
+      "desc": "suscipit explicabo ut"
+    },
+    {
+      "id": "1735",
+      "title": "alias sit quia",
+      "author": "Sarah Yundt",
+      "desc": "veniam officia aperiam"
+    },
+    {
+      "id": "9654",
+      "title": "qui aut ipsam",
+      "author": "Dr. Erica Mills",
+      "desc": "voluptas magni magni"
+    },
+    {
+      "id": "9fbd",
+      "title": "aut magni deserunt",
+      "author": "Lindsay Kulas",
+      "desc": "neque architecto consequaturquo voluptate autquae voluptates odio"
+    },
+    {
+      "id": "5ca9",
+      "title": "sint maxime excepturi",
+      "author": "Miss Julia Kassulke",
+      "desc": "qui optio delectusitaque perferendis nonquo fugit ullameum sed quam"
+    }
+  ],
   "users": [
     {
       "name": "Erma Pacocha",
@@ -86,8 +247,40 @@
       "id": "12"
     }
   ],
-  "rooms": [],
-  "movies": [],
+  "rooms": [
+    {
+      "id": "1",
+      "number": 101,
+      "capacity": 2
+    },
+    {
+      "id": "2",
+      "number": 102,
+      "capacity": 3
+    },
+    {
+      "id": "3",
+      "number": 103,
+      "capacity": 4
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "year": 2010
+    },
+    {
+      "id": "2",
+      "title": "The Matrix",
+      "year": 1999
+    },
+    {
+      "id": "3",
+      "title": "Interstellar",
+      "year": 2014
+    }
+  ],
   "games": [
     {
       "title": "test",
