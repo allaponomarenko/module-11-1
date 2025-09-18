@@ -70,3 +70,5 @@ function getCommentsByPostID(postId) {
 
 getCommentsByPostID(2).then(log).catch(console.error);
 */
+
+// ====================================
